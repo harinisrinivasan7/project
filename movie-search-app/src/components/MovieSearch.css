@@ -1,0 +1,125 @@
+/* Main container styling */
+.movie-search-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    /* For containing the fixed back button */
+}
+
+/* Back Button */
+button.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1000;
+    /* Ensures it stays on top of other elements */
+}
+
+/* Search History */
+.search-history {
+    margin-top: 20px;
+}
+
+.search-history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.search-history li {
+    cursor: pointer;
+    padding: 5px 0;
+    color: #0073e6;
+}
+
+.search-history li:hover {
+    text-decoration: underline;
+}
+
+/* Button styles */
+button {
+    cursor: pointer;
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Error message */
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Movie Results */
+.movie-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 60px;
+    /* Adds space below fixed back button */
+}
+
+.movie-card {
+    width: calc(33.33% - 12px);
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+
+.movie-card:hover {
+    transform: scale(1.03);
+}
+
+.movie-card img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.movie-card h3 {
+    font-size: 14px;
+    margin: 8px 0 4px;
+}
+
+/* Movie Details Modal */
+.movie-details {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.movie-details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.movie-details img {
+    max-width: 150px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.movie-details p {
+    margin: 5px 0;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
